@@ -1,2 +1,7 @@
 # From-disparity-to-depth-on-mobile-phone-stereo-cameras
 Tel Aviv University Msc project by Paz Ilan
+
+One of the most prevalent uses of stereo photography is estimating the depth of objects in the scene using epipolar geometry, the camera baseline, known camera parameters and the disparity between the same object in the different cameras. This enables the estimation of the actual object distance from the cameras. 
+The naïve model is not sufficient when dealing with real life images captured with mobile phone camera devices. This is due to their divergence from the pinhole model, focus mechanism, manufacturing tolerances, small setup size and usage of cheaper and less robust materials that is more sensitive to outside effects.
+Our project focuses on researching the issues with converting the found disparity to actual depth, on a mobile stereo phone setup that consists of two cameras with different focal lengths. We focus on trying to isolate different factors that cause deviation in the disparity, analyze the effect of each one and try to formalize and test a solution if possible. We also look into adding an additional online learning scheme that will enable us to learn a fix during the phone's normal operation mode.
+Our research shows that under some strict limitations we can devise a flow that can perform fix the disparity estimation error from around 30% relative error down to 5% relative error.
